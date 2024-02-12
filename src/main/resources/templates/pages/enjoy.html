@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Now Enjoy Your Very Own Sparkling Water')">
+</head>
+<body>
+
+<div th:insert="fragments/_header :: header"></div>
+
+<h2>Now Enjoy Your Very Own Sparkling Water</h2>
+<p>Ahhhh</p>
+
+
+<img th:src="@{/img/Enjoy.jpg}" alt="Final Glass of Sparkling Water">
+
+
+<p>Content taken from <a th:href="@{'https://www.grohe.us/kitchen-collections/modern/grohe-blue-chilled-sparkling'}" target="_blank">here.</a></p>
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

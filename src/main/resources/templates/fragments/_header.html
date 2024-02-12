@@ -1,0 +1,30 @@
+<head th:fragment="head(pageTitle)">
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle}"></title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#locales").change(function (event) {
+                const selectedOption = event.target.value;
+                if (selectedOption !== ""){
+                    window.location.replace("/?lang=" + selectedOption);
+                }
+            });
+        });
+    </script>
+</head>
+
+<header th:fragment="header">
+    <a th:href="@{/}"><img th:src="@{/img/logo.png}"/></a>
+    <nav>
+        <ul>
+            <li><a th:href="@{/mix}">Mix</a></li>
+            <li><a th:href="@{/pour}">Pour</a></li>
+            <li><a th:href="@{/enjoy}">Enjoy</a></li>
+
+        </ul>
+    </nav>
+
+</header>

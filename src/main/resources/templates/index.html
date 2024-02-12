@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/_header :: head(pageTitle='Sparkling Water at Home')}">
+</head>
+
+<body>
+<div th:insert="~{fragments/_header :: header}"></div>
+<h2>
+    Sparkling Water Unlimited
+</h2>
+<p>
+    Imagine getting fresh sparkling water with a push of a button. Well...you can with the Grohe Blue.
+</p>
+<img th:src="@{/img/grohe-blue-system.jpg}" alt="x">
+<p>Content taken from <a th:href="@{'https://www.grohe.us/kitchen-collections/modern/grohe-blue-chilled-sparkling'}" target="_blank">here.</a></p>
+<div th:replace="~{fragments/_footer :: footer}"></div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Pouring Carbonated Water From Faucet')">
+</head>
+<body>
+
+<div th:insert="fragments/_header :: header"></div>
+
+<h2>Pouring Carbonated Water From Faucet</h2>
+<p>After adding the flavoring (or no flavoring if you like that), just press the button on the side of the faucet to dispense sparkling water.</p>
+
+
+<img th:src="@{/img/Pour.jpg}" alt="Pour Sparkling Water From Faucet">
+
+<p>Content taken from <a th:href="@{'https://www.grohe.us/kitchen-collections/modern/grohe-blue-chilled-sparkling'}" target="_blank">here.</a></p>
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

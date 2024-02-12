@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Mixing Flavor')">
+</head>
+<body>
+
+<div th:insert="fragments/_header :: header"></div>
+
+<h2>Mixing Flavor</h2>
+
+<p>First add concentrated flavoring. I recommend using <a th:href="@{'https://www.oooflavors.com/'}" target="_blank">One on One Flavors</a>.</p>
+<p>Only 3 drops are necessary to provide a pleasant taste, similar to products like LaCroix or Hint.  Adding too much flavor can leave an aftertaste. </p>
+<p>Flavors I like the most include:</p>
+<ul style="background: none">
+    <li>raspberry lemonade</li>
+    <li>crushin' orange</li>
+    <li>pina colada</li>
+</ul>
+<p>Just to name a few</p>
+
+<p>For sure similar products like Mio or any other mainstream products/flavors taste amazing.  You just get a lot more bang for the buck with the concentrated drops.</p>
+
+<img th:src="@{/img/Mix.jpg}" alt="mix: Add flavor drops">
+
+<p>Content taken from <a th:href="@{'https://www.grohe.us/kitchen-collections/modern/grohe-blue-chilled-sparkling'}" target="_blank">here.</a></p>
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>
